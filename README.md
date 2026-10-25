@@ -2,9 +2,6 @@
 
 Analyse de la performance de campagnes de marketing digital : coûts, revenus, entonnoir de conversion (impressions → clics → leads → commandes) et rentabilité par canal, par zone géographique et par période.
 
-> Projet basé sur le dépôt original de [Joy Kimaiyo](https://github.com/JoyKimaiyo/SQL-Project-Portfolio), avec des requêtes corrigées et des indicateurs recalculés.
-
----
 
 ##  Objectifs
 
@@ -54,10 +51,6 @@ Source : [Kaggle — Analyze the marketing spending](https://www.kaggle.com/data
 
 **Prérequis** : MySQL 8+, MySQL Workbench (ou VS Code + extension SQLTools).
 
-```bash
-git clone https://github.com/JoyKimaiyo/SQL-Project-Portfolio.git
-cd SQL-Project-Portfolio
-```
 
 ```sql
 CREATE DATABASE IF NOT EXISTS marketing_spending;
@@ -68,7 +61,7 @@ Importer `Marketing.csv` dans une table `marketing_analysis` via **Table Data Im
 
 ---
 
-## 🧹 Nettoyage des données
+##  Nettoyage des données (Data Cleaning)
 
 ### 1. Séparer le canal et la zone géographique
 
@@ -278,6 +271,6 @@ ORDER BY romi_pct DESC;
 - **MySQL 8** — stockage et requêtes
 - **MySQL Workbench / VS Code (SQLTools)** — exécution
 
-## 🙏 Crédits
+## Sources
 
 - Données : [Kaggle — sinderpreet](https://www.kaggle.com/datasets/sinderpreet/analyze-the-marketing-spending)
